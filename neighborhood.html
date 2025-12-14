@@ -2,27 +2,69 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Neighborhood Walk</title>
-  <!-- You will need to link to the CSS file -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Neighborhood Walk</title> 
+    <link rel="stylesheet" href="css/style.css">
+  <style>
+    main div {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      justify-content: center;
+      align-items: center; 
+    } 
+
+    div img {
+      width: 100%;
+      height: -webkit-fill-available;
+      justify-items: center;
+      row-gap: initial;
+    }
+
+    .line_images {
+      grid-template-columns: 40% 40%;
+      justify-content: flex-end;
+      align-items: center;
+      row-gap: inherit;
+    }
+
+
+  </style>
+
+
+
+
+
 </head>
 
 <body>
+    <a href="#skipto">Skip to Main Content</a>
+
+
+
   <header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="neighborhood.html">Neighborhood Walks</a></li>
         <li><a href="parks.html">Walks in the Park</a></li>
+                <li>
+              <img src="images/BaconGallupPark.jpg" width="1000px" alt="Brown Labradoodle sitting next to a statue.">
+
+        </li>    
       </ul>
+
     </nav>
-    <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue.">
+ 
     <h1>Neighborhood Walks</h1>
   </header>
-  <main>
-    <div>
+
+
+
+
+  <main id="skipto">
+    <div class="line_images">
       <img src="images/bend_in_the_road.png"
         alt="a purple tree stands in contrast to the green leaved trees along a bend in the road" width="100">
       <img src="images/pink_blossoms.png" alt="small pink blossoms on an otherwise green leaved tree" width="100">
@@ -40,6 +82,9 @@
         width="100">
     </div>
   </main>
+
+
+  
   <footer>
     <p>This page was originally created by Colleen van Lent for the <a
         href="https://www.coursera.org/specializations/web-design"> Web Design for Everybody</a> Specialization.
